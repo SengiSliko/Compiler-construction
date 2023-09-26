@@ -1,0 +1,22 @@
+s0:="Using Figure   ";
+s0:="call your mum:)"
+,p1{
+    s0:="   DECLARE A   "
+    ,p2{
+        s0:="   DECLARE B   "
+
+        ,p4{
+            s0:="   DECLARE D   "
+        }
+    }
+    ,p3
+    {
+        s0:="   DECLARE C   "
+        ,p1{
+            s0:="   DECLARE A   "
+        }
+        ,p4{
+            s0:="   DECLARE D   "
+        }
+    }
+}

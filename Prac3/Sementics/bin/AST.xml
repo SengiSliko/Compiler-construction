@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROGR id="1" children="2 53 ">
+	<ALGO id="2" children="3 12 ">
+		<INSTR id="3" children="4 ">
+			<ASSIGN id="4" children="5 10 11 ">
+				<STRINGV id="5" children="6 7 ">
+					s
+					<DIGITS id="7" children="8 ">
+						<D id="8" children="9 ">
+							0
+						</D>
+					</DIGITS>
+				</STRINGV>
+				:=
+				<STRI id="11" children="11 ">
+					"Using Figure   "
+				</STRI>
+			</ASSIGN>
+		</INSTR>
+		<SEQ id="12" children="13 14 ">
+			;
+			<ALGO id="14" children="15 24 ">
+				<INSTR id="15" children="16 ">
+					<ASSIGN id="16" children="17 22 23 ">
+						<STRINGV id="17" children="18 19 ">
+							s
+							<DIGITS id="19" children="20 ">
+								<D id="20" children="21 ">
+									0
+								</D>
+							</DIGITS>
+						</STRINGV>
+						:=
+						<STRI id="23" children="23 ">
+							"kids same name "
+						</STRI>
+					</ASSIGN>
+				</INSTR>
+				<SEQ id="24" children="25 26 ">
+					;
+					<ALGO id="26" children="27 ">
+						<INSTR id="27" children="28 ">
+							<ASSIGN id="28" children="29 46 47 ">
+								<NUMVAR id="29" children="30 31 ">
+									n
+									<DIGITS id="31" children="32 34 ">
+										<D id="32" children="33 ">
+											1
+										</D>
+										<MORE id="34" children="35 ">
+											<DIGITS id="35" children="36 38 ">
+												<D id="36" children="37 ">
+													2
+												</D>
+												<MORE id="38" children="39 ">
+													<DIGITS id="39" children="40 42 ">
+														<D id="40" children="41 ">
+															2
+														</D>
+														<MORE id="42" children="43 ">
+															<DIGITS id="43" children="44 ">
+																<D id="44" children="45 ">
+																	3
+																</D>
+															</DIGITS>
+														</MORE>
+													</DIGITS>
+												</MORE>
+											</DIGITS>
+										</MORE>
+									</DIGITS>
+								</NUMVAR>
+								:=
+								<NUMEXPR id="47" children="48 ">
+									<NUMVAR id="48" children="49 50 ">
+										n
+										<DIGITS id="50" children="51 ">
+											<D id="51" children="52 ">
+												2
+											</D>
+										</DIGITS>
+									</NUMVAR>
+								</NUMEXPR>
+							</ASSIGN>
+						</INSTR>
+					</ALGO>
+				</SEQ>
+			</ALGO>
+		</SEQ>
+	</ALGO>
+	<PROCDEFS id="53" children="54 55 71 ">
+		,
+		<PROC id="55" children="56 57 60 61 70 ">
+			p
+			<DIGITS id="57" children="58 ">
+				<D id="58" children="59 ">
+					1
+				</D>
+			</DIGITS>
+			{
+			<PROGR id="61" children="62 ">
+				<ALGO id="62" children="63 ">
+					<INSTR id="63" children="64 ">
+						<CALL id="64" children="65 66 67 ">
+							c
+							p
+							<DIGITS id="67" children="68 ">
+								<D id="68" children="69 ">
+									2
+								</D>
+							</DIGITS>
+						</CALL>
+					</INSTR>
+				</ALGO>
+			</PROGR>
+			}
+		</PROC>
+		<PROCDEFS id="71" children="72 73 ">
+			,
+			<PROC id="73" children="74 75 78 79 83 ">
+				p
+				<DIGITS id="75" children="76 ">
+					<D id="76" children="77 ">
+						2
+					</D>
+				</DIGITS>
+				{
+				<PROGR id="79" children="80 ">
+					<ALGO id="80" children="81 ">
+						<INSTR id="81" children="82 ">
+							h
+						</INSTR>
+					</ALGO>
+				</PROGR>
+				}
+			</PROC>
+		</PROCDEFS>
+	</PROCDEFS>
+</PROGR>

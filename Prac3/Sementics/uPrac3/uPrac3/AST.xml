@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROGR id="1" children="2 24 ">
+	<ALGO id="2" children="3 12 ">
+		<INSTR id="3" children="4 ">
+			<ASSIGN id="4" children="5 10 11 ">
+				<STRINGV id="5" children="6 7 ">
+					s
+					<DIGITS id="7" children="8 ">
+						<D id="8" children="9 ">
+							0
+						</D>
+					</DIGITS>
+				</STRINGV>
+				:=
+				<STRI id="11" children="11 ">
+					"Using Figure   "
+				</STRI>
+			</ASSIGN>
+		</INSTR>
+		<SEQ id="12" children="13 14 ">
+			;
+			<ALGO id="14" children="15 ">
+				<INSTR id="15" children="16 ">
+					<ASSIGN id="16" children="17 22 23 ">
+						<STRINGV id="17" children="18 19 ">
+							s
+							<DIGITS id="19" children="20 ">
+								<D id="20" children="21 ">
+									0
+								</D>
+							</DIGITS>
+						</STRINGV>
+						:=
+						<STRI id="23" children="23 ">
+							"call your mum:)"
+						</STRI>
+					</ASSIGN>
+				</INSTR>
+			</ALGO>
+		</SEQ>
+	</ALGO>
+	<PROCDEFS id="24" children="25 26 ">
+		,
+		<PROC id="26" children="27 28 31 32 143 ">
+			p
+			<DIGITS id="28" children="29 ">
+				<D id="29" children="30 ">
+					1
+				</D>
+			</DIGITS>
+			{
+			<PROGR id="32" children="33 43 ">
+				<ALGO id="33" children="34 ">
+					<INSTR id="34" children="35 ">
+						<ASSIGN id="35" children="36 41 42 ">
+							<STRINGV id="36" children="37 38 ">
+								s
+								<DIGITS id="38" children="39 ">
+									<D id="39" children="40 ">
+										0
+									</D>
+								</DIGITS>
+							</STRINGV>
+							:=
+							<STRI id="42" children="42 ">
+								"   DECLARE A   "
+							</STRI>
+						</ASSIGN>
+					</INSTR>
+				</ALGO>
+				<PROCDEFS id="43" children="44 45 83 ">
+					,
+					<PROC id="45" children="46 47 50 51 82 ">
+						p
+						<DIGITS id="47" children="48 ">
+							<D id="48" children="49 ">
+								2
+							</D>
+						</DIGITS>
+						{
+						<PROGR id="51" children="52 62 ">
+							<ALGO id="52" children="53 ">
+								<INSTR id="53" children="54 ">
+									<ASSIGN id="54" children="55 60 61 ">
+										<STRINGV id="55" children="56 57 ">
+											s
+											<DIGITS id="57" children="58 ">
+												<D id="58" children="59 ">
+													0
+												</D>
+											</DIGITS>
+										</STRINGV>
+										:=
+										<STRI id="61" children="61 ">
+											"   DECLARE B   "
+										</STRI>
+									</ASSIGN>
+								</INSTR>
+							</ALGO>
+							<PROCDEFS id="62" children="63 64 ">
+								,
+								<PROC id="64" children="65 66 69 70 81 ">
+									p
+									<DIGITS id="66" children="67 ">
+										<D id="67" children="68 ">
+											4
+										</D>
+									</DIGITS>
+									{
+									<PROGR id="70" children="71 ">
+										<ALGO id="71" children="72 ">
+											<INSTR id="72" children="73 ">
+												<ASSIGN id="73" children="74 79 80 ">
+													<STRINGV id="74" children="75 76 ">
+														s
+														<DIGITS id="76" children="77 ">
+															<D id="77" children="78 ">
+																0
+															</D>
+														</DIGITS>
+													</STRINGV>
+													:=
+													<STRI id="80" children="80 ">
+														"   DECLARE D   "
+													</STRI>
+												</ASSIGN>
+											</INSTR>
+										</ALGO>
+									</PROGR>
+									}
+								</PROC>
+							</PROCDEFS>
+						</PROGR>
+						}
+					</PROC>
+					<PROCDEFS id="83" children="84 85 ">
+						,
+						<PROC id="85" children="86 87 90 91 142 ">
+							p
+							<DIGITS id="87" children="88 ">
+								<D id="88" children="89 ">
+									3
+								</D>
+							</DIGITS>
+							{
+							<PROGR id="91" children="92 102 ">
+								<ALGO id="92" children="93 ">
+									<INSTR id="93" children="94 ">
+										<ASSIGN id="94" children="95 100 101 ">
+											<STRINGV id="95" children="96 97 ">
+												s
+												<DIGITS id="97" children="98 ">
+													<D id="98" children="99 ">
+														0
+													</D>
+												</DIGITS>
+											</STRINGV>
+											:=
+											<STRI id="101" children="101 ">
+												"   DECLARE C   "
+											</STRI>
+										</ASSIGN>
+									</INSTR>
+								</ALGO>
+								<PROCDEFS id="102" children="103 104 122 ">
+									,
+									<PROC id="104" children="105 106 109 110 121 ">
+										p
+										<DIGITS id="106" children="107 ">
+											<D id="107" children="108 ">
+												1
+											</D>
+										</DIGITS>
+										{
+										<PROGR id="110" children="111 ">
+											<ALGO id="111" children="112 ">
+												<INSTR id="112" children="113 ">
+													<ASSIGN id="113" children="114 119 120 ">
+														<STRINGV id="114" children="115 116 ">
+															s
+															<DIGITS id="116" children="117 ">
+																<D id="117" children="118 ">
+																	0
+																</D>
+															</DIGITS>
+														</STRINGV>
+														:=
+														<STRI id="120" children="120 ">
+															"   DECLARE A   "
+														</STRI>
+													</ASSIGN>
+												</INSTR>
+											</ALGO>
+										</PROGR>
+										}
+									</PROC>
+									<PROCDEFS id="122" children="123 124 ">
+										,
+										<PROC id="124" children="125 126 129 130 141 ">
+											p
+											<DIGITS id="126" children="127 ">
+												<D id="127" children="128 ">
+													4
+												</D>
+											</DIGITS>
+											{
+											<PROGR id="130" children="131 ">
+												<ALGO id="131" children="132 ">
+													<INSTR id="132" children="133 ">
+														<ASSIGN id="133" children="134 139 140 ">
+															<STRINGV id="134" children="135 136 ">
+																s
+																<DIGITS id="136" children="137 ">
+																	<D id="137" children="138 ">
+																		0
+																	</D>
+																</DIGITS>
+															</STRINGV>
+															:=
+															<STRI id="140" children="140 ">
+																"   DECLARE D   "
+															</STRI>
+														</ASSIGN>
+													</INSTR>
+												</ALGO>
+											</PROGR>
+											}
+										</PROC>
+									</PROCDEFS>
+								</PROCDEFS>
+							</PROGR>
+							}
+						</PROC>
+					</PROCDEFS>
+				</PROCDEFS>
+			</PROGR>
+			}
+		</PROC>
+	</PROCDEFS>
+</PROGR>

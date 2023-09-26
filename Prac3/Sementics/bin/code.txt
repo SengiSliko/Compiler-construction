@@ -1,0 +1,9 @@
+s0:="Using Figure   ";
+s0:="kids same name ";
+n1223 := n2
+,p1{
+    c p2
+}
+,p2{
+  h
+}

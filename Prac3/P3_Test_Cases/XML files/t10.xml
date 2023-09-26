@@ -1,0 +1,131 @@
+<PROGR id="0" children="1, 15">
+   <ALGO id="1" children="2, 5">
+      <INSTR id="2" children="3">
+         <CALL id="3" children="4">
+            cp1
+         </CALL>
+      </INSTR>
+      <SEQ id="5" children="6">
+         <ALGO id="6" children="7, 10">
+            <INSTR id="7" children="8">
+               <CALL id="8" children="9">
+                  cp2
+               </CALL>
+            </INSTR>
+            <SEQ id="10" children="11">
+               <ALGO id="11" children="12">
+                  <INSTR id="12" children="13">
+                     <CALL id="13" children="14">
+                        cp3
+                     </CALL>
+                  </INSTR>
+               </ALGO>
+            </SEQ>
+         </ALGO>
+      </SEQ>
+   </ALGO>
+   <PROCDEFS id="15" children="16, 27">
+      <PROC id="16" children="17, 18">
+         p1
+         <PROGR id="18" children="19">
+            <ALGO id="19" children="20">
+               <INSTR id="20" children="21">
+                  <ASSIGN id="21" children="22, 24">
+                     <NUMVAR id="22" children="23">
+                        n1
+                     </NUMVAR>
+                     <NUMEXPR id="24" children="25">
+                        <DECNUM id="25" children="26">
+                           5.00
+                        </DECNUM>
+                     </NUMEXPR>
+                  </ASSIGN>
+               </INSTR>
+            </ALGO>
+         </PROGR>
+      </PROC>
+      <PROCDEFS id="27" children="28, 39">
+         <PROC id="28" children="29, 30">
+            p2
+            <PROGR id="30" children="31">
+               <ALGO id="31" children="32">
+                  <INSTR id="32" children="33">
+                     <ASSIGN id="33" children="34, 36">
+                        <NUMVAR id="34" children="35">
+                           n2
+                        </NUMVAR>
+                        <NUMEXPR id="36" children="37">
+                           <DECNUM id="37" children="38">
+                              6.00
+                           </DECNUM>
+                        </NUMEXPR>
+                     </ASSIGN>
+                  </INSTR>
+               </ALGO>
+            </PROGR>
+         </PROC>
+         <PROCDEFS id="39" children="40">
+            <PROC id="40" children="41, 42">
+               p3
+               <PROGR id="42" children="43, 57">
+                  <ALGO id="43" children="44, 47">
+                     <INSTR id="44" children="45">
+                        <CALL id="45" children="46">
+                           cp1
+                        </CALL>
+                     </INSTR>
+                     <SEQ id="47" children="48">
+                        <ALGO id="48" children="49, 52">
+                           <INSTR id="49" children="50">
+                              <CALL id="50" children="51">
+                                 cp2
+                              </CALL>
+                           </INSTR>
+                           <SEQ id="52" children="53">
+                              <ALGO id="53" children="54">
+                                 <INSTR id="54" children="55">
+                                    <CALL id="55" children="56">
+                                       cp4
+                                    </CALL>
+                                 </INSTR>
+                              </ALGO>
+                           </SEQ>
+                        </ALGO>
+                     </SEQ>
+                  </ALGO>
+                  <PROCDEFS id="57" children="58">
+                     <PROC id="58" children="59, 60">
+                        p4
+                        <PROGR id="60" children="61">
+                           <ALGO id="61" children="62, 69">
+                              <INSTR id="62" children="63">
+                                 <ASSIGN id="63" children="64, 66">
+                                    <NUMVAR id="64" children="65">
+                                       n5
+                                    </NUMVAR>
+                                    <NUMEXPR id="66" children="67">
+                                       <DECNUM id="67" children="68">
+                                          6.00
+                                       </DECNUM>
+                                    </NUMEXPR>
+                                 </ASSIGN>
+                              </INSTR>
+                              <SEQ id="69" children="70">
+                                 <ALGO id="70" children="71">
+                                    <INSTR id="71" children="72">
+                                       <CALL id="72" children="73">
+                                          cp3
+                                       </CALL>
+                                    </INSTR>
+                                 </ALGO>
+                              </SEQ>
+                           </ALGO>
+                        </PROGR>
+                     </PROC>
+                  </PROCDEFS>
+               </PROGR>
+            </PROC>
+         </PROCDEFS>
+      </PROCDEFS>
+   </PROCDEFS>
+</PROGR>
