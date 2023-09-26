@@ -1,0 +1,6 @@
+Multiplication:
+-45
+Addition:
+-4
+Division:
+-1.8

@@ -1,0 +1,19 @@
+c p1;
+s1 := "Proc 1 returned";
+r s1;
+c p2;
+s1 := "Proc 2 returned";
+r s1;
+h,
+
+p1
+{
+    s1 := "Proc 1 Called  ";
+    r s1
+},
+
+p2
+{
+    s1 := "Proc 2 Called  ";
+    r s1
+}

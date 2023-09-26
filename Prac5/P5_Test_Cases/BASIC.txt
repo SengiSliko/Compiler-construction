@@ -1,0 +1,14 @@
+10 GOSUB 80
+20 LET s1$ = "Proc 1 returned"
+30 PRINT; s1$
+40 GOSUB 110
+50 LET s1$ = "Proc 2 returned"
+60 PRINT; s1$
+70 STOP
+70 END
+80 LET s1$ = "Proc 1 Called  "
+90 PRINT; s1$
+100 RETURN
+110 LET s1$ = "Proc 2 Called  "
+120 PRINT; s1$
+130 RETURN

@@ -1,0 +1,45 @@
+
+g n1;
+g n2;
+g n3;
+
+g n4;
+
+b1 := F;
+b2 := F;
+
+i(>(n4, 0.00)) t
+{
+  c p1;
+  b1 := T
+};
+
+i(^(b1, b2)) t
+{
+  s1  := "Both procs used";
+  r s1
+}
+e
+{
+  s1  := "One procs used.";
+  r s1
+},
+
+p1
+{
+  s1 := "Triangle valid.";
+  s2 := "Triangle !valid";
+
+  n4 := m(n1, n1);
+  n5 := m(n2, n2);
+  n6 := m(n3, n3);
+
+  i(E(n6, a(n4, n5))) t
+  {
+   r s1 
+  }
+  e
+  {
+    r s2
+  }
+}

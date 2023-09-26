@@ -1,0 +1,34 @@
+10 INPUT "";n1
+20 INPUT "";n2
+30 INPUT "";n3
+40 INPUT "";n4
+50 LET b1 = 0
+60 LET b2 = 0
+70 IF n4 > 0.00 Then GOTO 90
+80 GOTO 110
+90 GOSUB 250
+100 LET b1 = 1
+110 IF b1 THEN GOTO 130 
+120 GOTO 170 
+130 IF b2 THEN GOTO 150 
+140 GOTO 170 
+150 LET P = 1 
+160 GOTO 180 
+170 LET P = 0 
+180 IF P Then GOTO 220
+190 LET s1$ = "One procs used."
+200 PRINT; s1$
+210 GOTO 240
+220 LET s1$ = "Both procs used"
+230 PRINT; s1$
+240 END
+250 LET s1$ = "Triangle valid."
+260 LET s2$ = "Triangle !valid"
+270 LET n4 = n1 * n1
+280 LET n5 = n2 * n2
+290 LET n6 = n3 * n3
+300 IF n6 = n4 + n5 Then GOTO 330
+310 PRINT; s2$
+320 GOTO 340
+330 PRINT; s1$
+340 RETURN
