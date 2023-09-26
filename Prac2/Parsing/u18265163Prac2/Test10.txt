@@ -1,0 +1,72 @@
+
+g n1;
+g n2;
+g n3;
+
+g n10;
+g n11;
+
+b1 := F;
+b2 := F;
+
+i(>(n10, 0.00)) t
+{
+  c p34;
+  b1 := T
+};
+
+i(>(n11, 0.00)) t
+{
+  c p745;
+  b2 := T
+};
+
+i(^(b1, b2)) t
+{
+  s1  := "Both procs used";
+  r s1
+}
+e
+{
+  s1  := "One procs used.";
+  r s1
+},
+
+p34
+{
+  s1 := "Triangle valid.";
+  s2 := "Triangle !valid";
+
+  n4 := m(n1, n1);
+  n5 := m(n2, n2);
+  n6 := m(n3, n3);
+
+  i(E(n6, a(n4, n5))) t
+  {
+   r s1 
+  }
+  e
+  {
+    r s2
+  }
+},
+
+p745
+{
+  s1 := "Factorial num: ";
+  s2 := "Original num:  ";
+  n2 := 1.00;
+  n3 := n1;
+  w(>(n3, 0.00))
+  {
+    n2 := m(n2, n3);
+    n3 := a(n3, -1.00)
+  };
+
+  r s2;
+  o n1;
+
+  r s1;
+  o n3
+  *Print Factorial*
+}

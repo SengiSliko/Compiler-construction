@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT id="0" Children="1">
+  <PROGR id="1" Children="2">
+    <ALGO id="2" Children="3 4 5">
+      <INSTR id="3" Children="4">
+        <OUTPUT id="4" Children="5">
+          <TEXT id="5" Children="6 7">
+            r
+            <STRINGV id="7" Children="8 9">
+              s
+              <DIGITS id="9" Children="10">
+                22
+              </DIGITS>
+            </STRINGV>
+          </TEXT>
+        </OUTPUT>
+      </INSTR>
+      <COMMENT id="4" Children="5">
+        *respon90678fse0*
+      </COMMENT>
+      <SEQ id="5" Children="6 7">
+        ;
+        <ALGO id="7" Children="8 9 10">
+          <INSTR id="8" Children="9">
+            <OUTPUT id="9" Children="10">
+              <VALUE id="10" Children="11 12">
+                o
+                <NUMVAR id="12" Children="13 14">
+                  n
+                  <DIGITS id="14" Children="15">
+                    22
+                  </DIGITS>
+                </NUMVAR>
+              </VALUE>
+            </OUTPUT>
+          </INSTR>
+          <COMMENT id="9" Children="10">
+            *outpu89ngcj;t0!*
+          </COMMENT>
+          <SEQ id="10" Children="11 12">
+            ;
+            <ALGO id="12" Children="13">
+              <INSTR id="13" Children="14">
+                h
+              </INSTR>
+            </ALGO>
+          </SEQ>
+        </ALGO>
+      </SEQ>
+    </ALGO>
+  </PROGR>
+</ROOT>

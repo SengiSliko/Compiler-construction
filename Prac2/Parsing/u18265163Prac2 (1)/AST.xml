@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROGR id="1" children="2 186 ">
+	<ALGO id="2" children="3 11 ">
+		<INSTR id="3" children="4 ">
+			<INPUT id="4" children="5 6 ">
+				g
+				<NUMVAR id="6" children="7 8 ">
+					n
+					<DIGITS id="8" children="9 ">
+						<D id="9" children="10 ">
+							1
+						</D>
+					</DIGITS>
+				</NUMVAR>
+			</INPUT>
+		</INSTR>
+		<SEQ id="11" children="12 13 ">
+			;
+			<ALGO id="13" children="14 22 ">
+				<INSTR id="14" children="15 ">
+					<INPUT id="15" children="16 17 ">
+						g
+						<NUMVAR id="17" children="18 19 ">
+							n
+							<DIGITS id="19" children="20 ">
+								<D id="20" children="21 ">
+									2
+								</D>
+							</DIGITS>
+						</NUMVAR>
+					</INPUT>
+				</INSTR>
+				<SEQ id="22" children="23 24 ">
+					;
+					<ALGO id="24" children="25 33 35 ">
+						<INSTR id="25" children="26 ">
+							<INPUT id="26" children="27 28 ">
+								g
+								<NUMVAR id="28" children="29 30 ">
+									n
+									<DIGITS id="30" children="31 ">
+										<D id="31" children="32 ">
+											3
+										</D>
+									</DIGITS>
+								</NUMVAR>
+							</INPUT>
+						</INSTR>
+						<COMMENT id="33" children="34 ">
+							*Add or multiply*
+						</COMMENT>
+						<SEQ id="35" children="36 37 ">
+							;
+							<ALGO id="37" children="38 145 ">
+								<INSTR id="38" children="39 ">
+									<BRANCH id="39" children="40 41 42 57 58 59 60 100 101 ">
+										i
+										(
+										<BOOLEXPR id="42" children="43 ">
+											<CMPR id="43" children="44 45 46 52 53 56 ">
+												E
+												(
+												<NUMEXPR id="46" children="47 ">
+													<NUMVAR id="47" children="48 49 ">
+														n
+														<DIGITS id="49" children="50 ">
+															<D id="50" children="51 ">
+																3
+															</D>
+														</DIGITS>
+													</NUMVAR>
+												</NUMEXPR>
+												,
+												<NUMEXPR id="53" children="54 ">
+													<DECNUM id="54" children="55 ">
+														0.00
+													</DECNUM>
+												</NUMEXPR>
+												)
+											</CMPR>
+										</BOOLEXPR>
+										)
+										t
+										t
+										<ALGO id="60" children="61 86 ">
+											<INSTR id="61" children="62 ">
+												<ASSIGN id="62" children="63 68 69 ">
+													<NUMVAR id="63" children="64 65 ">
+														n
+														<DIGITS id="65" children="66 ">
+															<D id="66" children="67 ">
+																1
+															</D>
+														</DIGITS>
+													</NUMVAR>
+													:=
+													<NUMEXPR id="69" children="70 71 72 78 79 85 ">
+														a
+														(
+														<NUMEXPR id="72" children="73 ">
+															<NUMVAR id="73" children="74 75 ">
+																n
+																<DIGITS id="75" children="76 ">
+																	<D id="76" children="77 ">
+																		1
+																	</D>
+																</DIGITS>
+															</NUMVAR>
+														</NUMEXPR>
+														,
+														<NUMEXPR id="79" children="80 ">
+															<NUMVAR id="80" children="81 82 ">
+																n
+																<DIGITS id="82" children="83 ">
+																	<D id="83" children="84 ">
+																		2
+																	</D>
+																</DIGITS>
+															</NUMVAR>
+														</NUMEXPR>
+														)
+													</NUMEXPR>
+												</ASSIGN>
+											</INSTR>
+											<SEQ id="86" children="87 88 ">
+												;
+												<ALGO id="88" children="89 ">
+													<INSTR id="89" children="90 ">
+														<CALL id="90" children="91 92 93 ">
+															c
+															p
+															<DIGITS id="93" children="94 96 ">
+																<D id="94" children="95 ">
+																	3
+																</D>
+																<MORE id="96" children="97 ">
+																	<DIGITS id="97" children="98 ">
+																		<D id="98" children="99 ">
+																			4
+																		</D>
+																	</DIGITS>
+																</MORE>
+															</DIGITS>
+														</CALL>
+													</INSTR>
+												</ALGO>
+											</SEQ>
+										</ALGO>
+										}
+										<ELSE id="101" children="102 103 104 144 ">
+											e
+											{
+											<ALGO id="104" children="105 130 ">
+												<INSTR id="105" children="106 ">
+													<ASSIGN id="106" children="107 112 113 ">
+														<NUMVAR id="107" children="108 109 ">
+															n
+															<DIGITS id="109" children="110 ">
+																<D id="110" children="111 ">
+																	1
+																</D>
+															</DIGITS>
+														</NUMVAR>
+														:=
+														<NUMEXPR id="113" children="114 115 116 122 123 129 ">
+															m
+															(
+															<NUMEXPR id="116" children="117 ">
+																<NUMVAR id="117" children="118 119 ">
+																	n
+																	<DIGITS id="119" children="120 ">
+																		<D id="120" children="121 ">
+																			1
+																		</D>
+																	</DIGITS>
+																</NUMVAR>
+															</NUMEXPR>
+															,
+															<NUMEXPR id="123" children="124 ">
+																<NUMVAR id="124" children="125 126 ">
+																	n
+																	<DIGITS id="126" children="127 ">
+																		<D id="127" children="128 ">
+																			2
+																		</D>
+																	</DIGITS>
+																</NUMVAR>
+															</NUMEXPR>
+															)
+														</NUMEXPR>
+													</ASSIGN>
+												</INSTR>
+												<SEQ id="130" children="131 132 ">
+													;
+													<ALGO id="132" children="133 ">
+														<INSTR id="133" children="134 ">
+															<CALL id="134" children="135 136 137 ">
+																c
+																p
+																<DIGITS id="137" children="138 140 ">
+																	<D id="138" children="139 ">
+																		4
+																	</D>
+																	<MORE id="140" children="141 ">
+																		<DIGITS id="141" children="142 ">
+																			<D id="142" children="143 ">
+																				5
+																			</D>
+																		</DIGITS>
+																	</MORE>
+																</DIGITS>
+															</CALL>
+														</INSTR>
+													</ALGO>
+												</SEQ>
+											</ALGO>
+											}
+										</ELSE>
+									</BRANCH>
+								</INSTR>
+								<SEQ id="145" children="146 147 ">
+									;
+									<ALGO id="147" children="148 157 ">
+										<INSTR id="148" children="149 ">
+											<ASSIGN id="149" children="150 155 156 ">
+												<STRINGV id="150" children="151 152 ">
+													s
+													<DIGITS id="152" children="153 ">
+														<D id="153" children="154 ">
+															1
+														</D>
+													</DIGITS>
+												</STRINGV>
+												:=
+												<STRI id="156" children="156 ">
+													"The result is: "
+												</STRI>
+											</ASSIGN>
+										</INSTR>
+										<SEQ id="157" children="158 159 ">
+											;
+											<ALGO id="159" children="160 169 ">
+												<INSTR id="160" children="161 ">
+													<OUTPUT id="161" children="162 ">
+														<TEXT id="162" children="163 164 ">
+															r
+															<STRINGV id="164" children="165 166 ">
+																s
+																<DIGITS id="166" children="167 ">
+																	<D id="167" children="168 ">
+																		1
+																	</D>
+																</DIGITS>
+															</STRINGV>
+														</TEXT>
+													</OUTPUT>
+												</INSTR>
+												<SEQ id="169" children="170 171 ">
+													;
+													<ALGO id="171" children="172 181 ">
+														<INSTR id="172" children="173 ">
+															<OUTPUT id="173" children="174 ">
+																<VALUE id="174" children="175 176 ">
+																	o
+																	<NUMVAR id="176" children="177 178 ">
+																		n
+																		<DIGITS id="178" children="179 ">
+																			<D id="179" children="180 ">
+																				1
+																			</D>
+																		</DIGITS>
+																	</NUMVAR>
+																</VALUE>
+															</OUTPUT>
+														</INSTR>
+														<SEQ id="181" children="182 183 ">
+															;
+															<ALGO id="183" children="184 ">
+																<INSTR id="184" children="185 ">
+																	h
+																</INSTR>
+															</ALGO>
+														</SEQ>
+													</ALGO>
+												</SEQ>
+											</ALGO>
+										</SEQ>
+									</ALGO>
+								</SEQ>
+							</ALGO>
+						</SEQ>
+					</ALGO>
+				</SEQ>
+			</ALGO>
+		</SEQ>
+	</ALGO>
+	<PROCDEFS id="186" children="187 188 222 ">
+		,
+		<PROC id="188" children="189 190 197 198 221 ">
+			p
+			<DIGITS id="190" children="191 193 ">
+				<D id="191" children="192 ">
+					3
+				</D>
+				<MORE id="193" children="194 ">
+					<DIGITS id="194" children="195 ">
+						<D id="195" children="196 ">
+							4
+						</D>
+					</DIGITS>
+				</MORE>
+			</DIGITS>
+			{
+			<PROGR id="198" children="199 ">
+				<ALGO id="199" children="200 209 ">
+					<INSTR id="200" children="201 ">
+						<ASSIGN id="201" children="202 207 208 ">
+							<STRINGV id="202" children="203 204 ">
+								s
+								<DIGITS id="204" children="205 ">
+									<D id="205" children="206 ">
+										1
+									</D>
+								</DIGITS>
+							</STRINGV>
+							:=
+							<STRI id="208" children="208 ">
+								"Addition chosen"
+							</STRI>
+						</ASSIGN>
+					</INSTR>
+					<SEQ id="209" children="210 211 ">
+						;
+						<ALGO id="211" children="212 ">
+							<INSTR id="212" children="213 ">
+								<OUTPUT id="213" children="214 ">
+									<TEXT id="214" children="215 216 ">
+										r
+										<STRINGV id="216" children="217 218 ">
+											s
+											<DIGITS id="218" children="219 ">
+												<D id="219" children="220 ">
+													1
+												</D>
+											</DIGITS>
+										</STRINGV>
+									</TEXT>
+								</OUTPUT>
+							</INSTR>
+						</ALGO>
+					</SEQ>
+				</ALGO>
+			</PROGR>
+			}
+		</PROC>
+		<PROCDEFS id="222" children="223 224 ">
+			,
+			<PROC id="224" children="225 226 233 234 257 ">
+				p
+				<DIGITS id="226" children="227 229 ">
+					<D id="227" children="228 ">
+						4
+					</D>
+					<MORE id="229" children="230 ">
+						<DIGITS id="230" children="231 ">
+							<D id="231" children="232 ">
+								5
+							</D>
+						</DIGITS>
+					</MORE>
+				</DIGITS>
+				{
+				<PROGR id="234" children="235 ">
+					<ALGO id="235" children="236 245 ">
+						<INSTR id="236" children="237 ">
+							<ASSIGN id="237" children="238 243 244 ">
+								<STRINGV id="238" children="239 240 ">
+									s
+									<DIGITS id="240" children="241 ">
+										<D id="241" children="242 ">
+											1
+										</D>
+									</DIGITS>
+								</STRINGV>
+								:=
+								<STRI id="244" children="244 ">
+									"Multiply chosen"
+								</STRI>
+							</ASSIGN>
+						</INSTR>
+						<SEQ id="245" children="246 247 ">
+							;
+							<ALGO id="247" children="248 ">
+								<INSTR id="248" children="249 ">
+									<OUTPUT id="249" children="250 ">
+										<TEXT id="250" children="251 252 ">
+											r
+											<STRINGV id="252" children="253 254 ">
+												s
+												<DIGITS id="254" children="255 ">
+													<D id="255" children="256 ">
+														1
+													</D>
+												</DIGITS>
+											</STRINGV>
+										</TEXT>
+									</OUTPUT>
+								</INSTR>
+							</ALGO>
+						</SEQ>
+					</ALGO>
+				</PROGR>
+				}
+			</PROC>
+		</PROCDEFS>
+	</PROCDEFS>
+</PROGR>

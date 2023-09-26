@@ -1,0 +1,36 @@
+g n1;
+g n2;
+
+g n3
+
+*Add or multiply*;
+
+i(E(n3, 0.00)) t
+{
+  n1 := a(n1, n2);
+  c p34
+}
+e
+{
+  n1 := m(n1, n2);
+  c p45
+};
+
+s1 := "The result is: ";
+
+r s1;
+o n1;
+
+h,
+
+p34
+{
+  s1 := "Addition chosen";
+  r s1
+},
+
+p45
+{
+  s1 := "Multiply chosen";
+  r s1
+}

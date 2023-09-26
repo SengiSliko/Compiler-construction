@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROGR id="1" children="2 5 ">
+	<ALGO id="2" children="3 ">
+		<INSTR id="3" children="4 ">
+			h
+		</INSTR>
+	</ALGO>
+	<PROCDEFS id="5" children="6 7 ">
+		,
+		<PROC id="7" children="8 9 12 13 43 ">
+			p
+			<DIGITS id="9" children="10 ">
+				<D id="10" children="11 ">
+					1
+				</D>
+			</DIGITS>
+			{
+			<PROGR id="13" children="14 17 ">
+				<ALGO id="14" children="15 ">
+					<INSTR id="15" children="16 ">
+						h
+					</INSTR>
+				</ALGO>
+				<PROCDEFS id="17" children="18 19 ">
+					,
+					<PROC id="19" children="20 21 24 25 42 ">
+						p
+						<DIGITS id="21" children="22 ">
+							<D id="22" children="23 ">
+								2
+							</D>
+						</DIGITS>
+						{
+						<PROGR id="25" children="26 29 ">
+							<ALGO id="26" children="27 ">
+								<INSTR id="27" children="28 ">
+									h
+								</INSTR>
+							</ALGO>
+							<PROCDEFS id="29" children="30 31 ">
+								,
+								<PROC id="31" children="32 33 36 37 41 ">
+									p
+									<DIGITS id="33" children="34 ">
+										<D id="34" children="35 ">
+											3
+										</D>
+									</DIGITS>
+									{
+									<PROGR id="37" children="38 ">
+										<ALGO id="38" children="39 ">
+											<INSTR id="39" children="40 "
+												h
+											</INSTR>
+										</ALGO>
+									</PROGR>
+									}
+								</PROC>
+							</PROCDEFS>
+						</PROGR>
+						}
+					</PROC>
+				</PROCDEFS>
+			</PROGR>
+			}
+		</PROC>
+	</PROCDEFS>
+</PROGR>

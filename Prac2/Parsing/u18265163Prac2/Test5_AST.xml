@@ -1,0 +1,101 @@
+<PROGR id="0" children="1">
+   <ALGO id="1" children="2, 8">
+      <INSTR id="2" children="3">
+         <ASSIGN id="3" children="4, 6">
+            <STRINGV id="4" children="5">
+               s1
+            </STRINGV>
+            <STRI id="6" children="7">
+               Hellooooooooooo
+            </STRI>
+         </ASSIGN>
+      </INSTR>
+      <SEQ id="8" children="9">
+         <ALGO id="9" children="10, 17">
+            <INSTR id="10" children="11">
+               <ASSIGN id="11" children="12, 14">
+                  <NUMVAR id="12" children="13">
+                     n1
+                  </NUMVAR>
+                  <NUMEXPR id="14" children="15">
+                     <DECNUM id="15" children="16">
+                        12345.00
+                     </DECNUM>
+                  </NUMEXPR>
+               </ASSIGN>
+            </INSTR>
+            <SEQ id="17" children="18">
+               <ALGO id="18" children="19, 26">
+                  <INSTR id="19" children="20">
+                     <ASSIGN id="20" children="21, 23">
+                        <BOOLVAR id="21" children="22">
+                           b1
+                        </BOOLVAR>
+                        <BOOLEXPR id="23" children="24">
+                           <LOGIC id="24" children="25">
+                              T
+                           </LOGIC>
+                        </BOOLEXPR>
+                     </ASSIGN>
+                  </INSTR>
+                  <SEQ id="26" children="27">
+                     <ALGO id="27" children="28, 34">
+                        <INSTR id="28" children="29">
+                           <ASSIGN id="29" children="30, 32">
+                              <STRINGV id="30" children="31">
+                                 s2
+                              </STRINGV>
+                              <STRI id="32" children="33">
+                                 Hellooooooooooo
+                              </STRI>
+                           </ASSIGN>
+                        </INSTR>
+                        <SEQ id="34" children="35">
+                           <ALGO id="35" children="36, 43">
+                              <INSTR id="36" children="37">
+                                 <ASSIGN id="37" children="38, 40">
+                                    <NUMVAR id="38" children="39">
+                                       n2
+                                    </NUMVAR>
+                                    <NUMEXPR id="40" children="41">
+                                       <NUMVAR id="41" children="42">
+                                          n1
+                                       </NUMVAR>
+                                    </NUMEXPR>
+                                 </ASSIGN>
+                              </INSTR>
+                              <SEQ id="43" children="44">
+                                 <ALGO id="44" children="45, 53">
+                                    <INSTR id="45" children="46">
+                                       <ASSIGN id="46" children="47, 49">
+                                          <BOOLVAR id="47" children="48">
+                                             b2
+                                          </BOOLVAR>
+                                          <BOOLEXPR id="49" children="50">
+                                             <LOGIC id="50" children="51">
+                                                <BOOLVAR id="51" children="52">
+                                                   b1
+                                                </BOOLVAR>
+                                             </LOGIC>
+                                          </BOOLEXPR>
+                                       </ASSIGN>
+                                    </INSTR>
+                                    <SEQ id="53" children="54">
+                                       <ALGO id="54" children="55">
+                                          <INSTR id="55" children="56">
+                                             h
+                                          </INSTR>
+                                       </ALGO>
+                                    </SEQ>
+                                 </ALGO>
+                              </SEQ>
+                           </ALGO>
+                        </SEQ>
+                     </ALGO>
+                  </SEQ>
+               </ALGO>
+            </SEQ>
+         </ALGO>
+      </SEQ>
+   </ALGO>
+</PROGR>

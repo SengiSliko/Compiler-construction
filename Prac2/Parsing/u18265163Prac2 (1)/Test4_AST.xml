@@ -1,0 +1,121 @@
+<PROGR id="0" children="1">
+   <ALGO id="1" children="2, 9">
+      <INSTR id="2" children="3">
+         <ASSIGN id="3" children="4, 6">
+            <NUMVAR id="4" children="">
+               n12
+            </NUMVAR>
+            <NUMEXPR id="6" children="7">
+               <DECNUM id="7" children="">
+                  123.00
+               </DECNUM>
+            </NUMEXPR>
+         </ASSIGN>
+      </INSTR>
+      <SEQ id="9" children="10">
+         <ALGO id="10" children="11, 18">
+            <INSTR id="11" children="12">
+               <ASSIGN id="12" children="13, 15">
+                  <NUMVAR id="13" children="">
+                     n24
+                  </NUMVAR>
+                  <NUMEXPR id="15" children="16">
+                     <DECNUM id="16" children="">
+                        329.00
+                     </DECNUM>
+                  </NUMEXPR>
+               </ASSIGN>
+            </INSTR>
+            <SEQ id="18" children="19">
+               <ALGO id="19" children="20, 57">
+                  <INSTR id="20" children="21">
+                     <BRANCH id="21" children="22, 31">
+                        <BOOLEXPR id="22" children="23">
+                           <CMPR id="23" children="25, 28">
+                              &lt;
+                              <NUMEXPR id="25" children="26">
+                                 <NUMVAR id="26" children="">
+                                    n12
+                                 </NUMVAR>
+                              </NUMEXPR>
+                              <NUMEXPR id="28" children="29">
+                                 <NUMVAR id="29" children="">
+                                    n24
+                                 </NUMVAR>
+                              </NUMEXPR>
+                           </CMPR>
+                        </BOOLEXPR>
+                        <ALGO id="31" children="32, 39">
+                           <INSTR id="32" children="33">
+                              <ASSIGN id="33" children="34, 36">
+                                 <NUMVAR id="34" children="">
+                                    n3
+                                 </NUMVAR>
+                                 <NUMEXPR id="36" children="37">
+                                    <NUMVAR id="37" children="">
+                                       n12
+                                    </NUMVAR>
+                                 </NUMEXPR>
+                              </ASSIGN>
+                           </INSTR>
+                           <SEQ id="39" children="40">
+                              <ALGO id="40" children="41, 48">
+                                 <INSTR id="41" children="42">
+                                    <ASSIGN id="42" children="43, 45">
+                                       <NUMVAR id="43" children="">
+                                          n12
+                                       </NUMVAR>
+                                       <NUMEXPR id="45" children="46">
+                                          <NUMVAR id="46" children="">
+                                             n24
+                                          </NUMVAR>
+                                       </NUMEXPR>
+                                    </ASSIGN>
+                                 </INSTR>
+                                 <SEQ id="48" children="49">
+                                    <ALGO id="49" children="50">
+                                       <INSTR id="50" children="51">
+                                          <ASSIGN id="51" children="52, 54">
+                                             <NUMVAR id="52" children="">
+                                                n24
+                                             </NUMVAR>
+                                             <NUMEXPR id="54" children="55">
+                                                <NUMVAR id="55" children="">
+                                                   n3
+                                                </NUMVAR>
+                                             </NUMEXPR>
+                                          </ASSIGN>
+                                       </INSTR>
+                                    </ALGO>
+                                 </SEQ>
+                              </ALGO>
+                           </SEQ>
+                        </ALGO>
+                     </BRANCH>
+                  </INSTR>
+                  <SEQ id="57" children="58">
+                     <ALGO id="58" children="59, 64">
+                        <INSTR id="59" children="60">
+                           <OUTPUT id="60" children="61">
+                              <VALUE id="61" children="62">
+                                 <NUMVAR id="62" children="">
+                                    n12
+                                 </NUMVAR>
+                              </VALUE>
+                           </OUTPUT>
+                        </INSTR>
+                        <SEQ id="64" children="65">
+                           <ALGO id="65" children="66">
+                              <INSTR id="66" children="">
+                                 h
+                              </INSTR>
+                           </ALGO>
+                        </SEQ>
+                     </ALGO>
+                  </SEQ>
+               </ALGO>
+            </SEQ>
+         </ALGO>
+      </SEQ>
+   </ALGO>
+</PROGR>

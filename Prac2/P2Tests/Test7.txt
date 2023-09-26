@@ -1,0 +1,10 @@
+n1 := 4.00;
+s1 := "Hellooooooooooo";
+g n1;
+n2 := 5.00;
+n3 := a(n1, n2);
+n4 := m(n1, n2);
+n5 := d(n1, n2);
+o n5;
+r s1;
+h

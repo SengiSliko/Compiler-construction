@@ -1,0 +1,4 @@
+s1:="Hellooooooooooo";
+n1:=125321;
+s2:=123456;
+n2:="Hellooooooooooo";
