@@ -1,0 +1,14 @@
+<MinDFA>
+<states>
+<A start="true"/>
+<B accepting="true"/>
+</states>
+<transitions>
+	<A>
+	   <B>a</B>
+	</A>
+	<B>
+	   <B>a</B>
+	</B>
+</transitions>
+</MinDFA>

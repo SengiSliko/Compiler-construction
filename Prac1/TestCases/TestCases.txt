@@ -1,0 +1,6 @@
+Case 1, 1 Mark, empty string, should generate meaningful error message: 
+Case 2, 1 Mark, nonsense that should fail with meaningful message: asdflkjasldfalksjdfl;kasj
+Case 3, 2 Marks, MinDFA should be correct or no marks: (Hi)+thErE22*
+Case 4, 2 Marks, MinDFA should be correct or no marks: Is?ThIs(ValId)*
+Case 5, 2 Marks, MinDFA should be correct or no marks: ((a|b)*C*(a*|b*)*)*
+Case 6, 2 Marks, MinDFA should be correct or no marks: ((C|0)S(3|4|1))|(CO|mp|1L|ER)*

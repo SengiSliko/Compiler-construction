@@ -1,0 +1,129 @@
+import java.util.*;
+
+class ToDFA{
+    public int stateCount;
+
+    public ToDFA(){
+        this.stateCount = 0;
+    }
+
+    public void convertToDFA(NFA nfa){
+        List<Character> symbols = new ArrayList<Character>();
+        for(State state : nfa.states){
+            for(Transition transition : state.transitions){
+                if(!symbols.contains(transition.symbol) && transition.symbol != '#'){
+                    symbols.add(transition.symbol);
+                }
+            }
+        }
+
+
+        DFA dfa = new DFA();
+
+        State firstState = nfa.startState;
+
+        DFAState dfaStartState = new DFAState("s" + stateCount++, false);
+
+        List<State> closure = new ArrayList<State>();
+
+        dfaStartState.nfaStates = findEpsilonClosure(firstState, closure);
+
+        dfa.states.add(dfaStartState);
+
+        boolean isDone = false;
+
+        DFAState currentState = dfaStartState;
+
+    }
+
+    public void createTheDFA(DFAState dfaState, Boolean isDone){
+        if(!isDone){
+            for(Character symbol : symbols){
+                List<State> states = new ArrayList<State>();
+                for(State state : dfaStartState.nfaStates){
+                    for(Transition transition : state.transitions){
+                        if(transition.symbol == symbol && isThere(currentState, transition.from)  && !states.contains(transition.toState)){
+                            states.add(transition.to);
+                        }
+                    }
+                }
+                if(!states.empty){
+                    closure = new ArrayList<State>();
+                    List<State> tempList = new ArrayList<State>();
+                    for(State state : states){
+                        tempList = findEpsilonClosure(state, tempList);
+                        for(State tempState : tempList){
+                            if(!closure.contains(tempState)){
+                                closure.add(tempState);
+                            }
+                        }
+
+                    }
+
+                    boolean isNew = true;
+                    for(DFAState dfaState : dfa.states){
+                       if(dfaState.nfaState.containsAll(closure)){
+                            currentState.addTransition(dfaState, symbol);
+                            isNew = false;
+                       }
+                    }
+                    if(isNew){
+                        DFAState newState = new DFAState("s" + stateCount++, false);
+                        newState.nfaStates = closure;
+                        currentState.addTransition(newState, symbol);
+                        dfa.states.add(newState);
+                    }
+
+                }
+                   
+            }
+            isDone = true;
+            for(DFA dfaState : dfa.states){
+                if(dfaState.nfaStates.empty){
+                    isDone = false;
+                }
+            }
+            for(Transition transition : dfaState.transitions){
+                createTheDFA(transition.to, isDone);
+            }
+        }
+    }
+
+    public boolean isThere(DFAState dfaState, State nfaState){
+        for(State state : dfaState.nfaStates){
+            if(state.name.equals(nfaState.name)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public List<State> findEpsilonClosure(State state, List<State> closure, NFA nfa){
+        if(state.isVisited == false){
+            state.isVisited = true;
+            closure.add(state);
+            for(Transition transition : state.transitions){
+                if(transition.symbol == '#'){
+                    findEpsilonClosure(transition.toState, closure);
+                }
+            }
+        }
+        else{
+            for(State state : nfa.states){
+                state.isVisited = false;
+            }
+            return closure;
+        }
+        
+    }
+}
+
+class DFA{
+    public List<DFAState> states;
+    public DFAState startState;
+    public DFAState endState;
+
+    public DFA(){
+        this.states = new ArrayList<DFAState>();
+    }
+}

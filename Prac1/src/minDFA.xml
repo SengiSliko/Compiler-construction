@@ -1,0 +1,45 @@
+<MinDFA>
+<states>
+<A start="true"/>
+<B accepting="true"/>
+<C/>
+<D/>
+<E/>
+<F/>
+<G/>
+<H/>
+<I/>
+</states>
+<transitions>
+	<A>
+	   <C>H</C>
+	</A>
+	<B>
+	   <B>2</B>
+	</B>
+	<C>
+	   <D>i</D>
+	</C>
+	<D>
+	   <C>H</C>
+	</D>
+	<D>
+	   <E>t</E>
+	</D>
+	<E>
+	   <F>h</F>
+	</E>
+	<F>
+	   <G>E</G>
+	</F>
+	<G>
+	   <H>r</H>
+	</G>
+	<H>
+	   <I>E</I>
+	</H>
+	<I>
+	   <B>2</B>
+	</I>
+</transitions>
+</MinDFA>
