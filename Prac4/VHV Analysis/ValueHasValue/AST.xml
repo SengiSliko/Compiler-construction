@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROGR id="1" children="2 ">
+	<ALGO id="2" children="3 12 ">
+		<INSTR id="3" children="4 ">
+			<ASSIGN id="4" children="5 10 11 ">
+				<STRINGV id="5" children="6 7 ">
+					s
+					<DIGITS id="7" children="8 ">
+						<D id="8" children="9 ">
+							2
+						</D>
+					</DIGITS>
+				</STRINGV>
+				:=
+				<STRI id="11" children="11 ">
+					"123456789012345"
+				</STRI>
+			</ASSIGN>
+		</INSTR>
+		<SEQ id="12" children="13 14 ">
+			;
+			<ALGO id="14" children="15 23 ">
+				<INSTR id="15" children="16 ">
+					<INPUT id="16" children="17 18 ">
+						g
+						<NUMVAR id="18" children="19 20 ">
+							n
+							<DIGITS id="20" children="21 ">
+								<D id="21" children="22 ">
+									1
+								</D>
+							</DIGITS>
+						</NUMVAR>
+					</INPUT>
+				</INSTR>
+				<SEQ id="23" children="24 25 ">
+					;
+					<ALGO id="25" children="26 35 ">
+						<INSTR id="26" children="27 ">
+							<OUTPUT id="27" children="28 ">
+								<VALUE id="28" children="29 30 ">
+									o
+									<NUMVAR id="30" children="31 32 ">
+										n
+										<DIGITS id="32" children="33 ">
+											<D id="33" children="34 ">
+												1
+											</D>
+										</DIGITS>
+									</NUMVAR>
+								</VALUE>
+							</OUTPUT>
+						</INSTR>
+						<SEQ id="35" children="36 37 ">
+							;
+							<ALGO id="37" children="38 ">
+								<INSTR id="38" children="39 ">
+									<OUTPUT id="39" children="40 ">
+										<TEXT id="40" children="41 42 ">
+											r
+											<STRINGV id="42" children="43 44 ">
+												s
+												<DIGITS id="44" children="45 ">
+													<D id="45" children="46 ">
+														2
+													</D>
+												</DIGITS>
+											</STRINGV>
+										</TEXT>
+									</OUTPUT>
+								</INSTR>
+							</ALGO>
+						</SEQ>
+					</ALGO>
+				</SEQ>
+			</ALGO>
+		</SEQ>
+	</ALGO>
+</PROGR>
